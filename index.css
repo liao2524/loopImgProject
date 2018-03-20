@@ -1,0 +1,100 @@
+/*滚动新闻*/
+ .roll-content{
+	width: 755px;
+	height: 450px;	
+	position: relative;
+	overflow: hidden;
+	margin: auto;
+}
+ .roll-list{
+	width: 7550px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.roll-slide{
+	float: left;
+	position: relative;
+}
+.roll-list img{
+	width: 755px;
+	height: 450px;
+}
+.num {
+	 position:absolute; 
+	 width:100%;
+	 bottom:10px; 
+	 text-align:center; 
+	 font-size:0px;
+}
+.num li{ 
+	width:10px;
+	height:10px; background-color:#888;
+	border-radius:50%;
+	display:inline-block; 
+	margin:0px 3px;
+	cursor:pointer;
+}
+.num li.active {
+	background-color: #ff6a00;
+}
+
+.btn {
+	width: 30px;
+	height: 50px;
+	background-color: #808080;
+	opacity: 0.5; filter:alpha(opacity:0.5); 
+	position:absolute;top:50%; 
+	margin-top:-25px;
+	cursor:pointer;
+	text-align:center;
+	line-height:50px;
+	font-size:40px;
+	color:#fff;
+	font-family:"宋体";
+	display:none;
+}
+.btn-l { 
+	left:0px;
+}
+.btn-r { 
+	right:0px;
+}
+.roll-content:hover .btn {
+	display:block;
+}
+
+.roll-text{
+	width: 731px;
+	height: 120px;
+	padding: 0 12px 12px;
+	position: absolute;
+	left: 0;
+	top: 290px;
+}
+
+.roll-text li.current{
+	display: block;
+}
+.roll-text>span{
+	box-sizing: border-box;
+	height: 20px;
+    background-color: #000;
+    color: #ffc81f;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 4px 5px;
+}
+.roll-text h3{
+	margin-top: 10px; 
+}
+.roll-text h3>span{
+	font: 12px/1.5 tahoma,arial;
+	height: 36px;
+	line-height: 40px;
+	font-size: 30px;
+	color: #fff;
+	background-color: #000;
+	margin-bottom: 10px;
+	padding: 0 5px;
+}
